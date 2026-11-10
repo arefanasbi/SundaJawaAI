@@ -1,0 +1,27 @@
+PEMBARUAN VERSI PINK UI + PERBAIKAN NAVIGASI/AUDIO
+
+Perubahan:
+1. Tema antarmuka mengikuti referensi: magenta, pink, ungu, panel lembut, dan sidebar gelap.
+2. Tombol kartu Beranda sekarang mengubah halaman melalui state navigasi yang sama dengan sidebar.
+3. Halaman Audio menampilkan ukuran file, pemutar audio, dan pemeriksaan sederhana apakah WAV hening.
+4. Pemrosesan audio menolak data kosong dan memberi pesan diagnostik yang lebih jelas.
+5. Menu Pelatihan Model dan Evaluasi Model ditambahkan.
+
+CARA MEMPERBARUI:
+1. Hentikan Streamlit dengan Ctrl+C.
+2. Ekstrak ZIP ini.
+3. Salin isi folder SundaJawaAI dari ZIP ke folder proyek SundaJawaAI yang sedang digunakan; izinkan replace.
+4. Aktifkan .venv dari folder induk yang menyimpan .venv.
+5. Masuk ke folder SundaJawaAI.
+6. Jalankan: pip install --upgrade -r requirements.txt
+7. Jalankan: pip install -r requirements-audio.txt
+8. Jalankan: python train_model.py
+9. Jalankan: streamlit run app.py
+
+CATATAN AUDIO:
+- Izinkan mikrofon untuk localhost di pengaturan izin situs browser.
+- Periksa input microphone Windows: Settings > System > Sound > Input.
+- Saat merekam, pastikan meter input Windows bergerak.
+- Jika pemutar audio tetap senyap, masalahnya kemungkinan ada pada perangkat/izin mikrofon, bukan Whisper.
+- Whisper membutuhkan FFmpeg yang terpasang dan dapat dipanggil dari CMD.
+- Foto memerlukan Tesseract OCR.

@@ -1,0 +1,10 @@
+Dataset seed/demo untuk menguji pipeline klasifikasi lima kategori:
+- Sunda Kasar
+- Sunda Lemes
+- Jawa
+- Aceh
+- Palembang
+
+Contoh Aceh, Palembang, dan tambahan pemisahan ragam Sunda merupakan data seed yang perlu diperiksa oleh penutur asli/ahli bahasa. Label ragam Sunda dapat berbeda menurut wilayah, konteks, hubungan sosial, dan pilihan kata; jangan menganggap semua kata memiliki tingkat tutur tetap.
+
+Sebelum penggunaan akademik, perluas dataset dengan sumber yang dapat dipertanggungjawabkan, variasikan penutur/topik/dialek, validasi label oleh penutur kompeten, dan hindari duplikasi antara data latih dan uji. Skor probabilitas model bukan persentase pasti komposisi bahasa atau jaminan kebenaran prediksi.
